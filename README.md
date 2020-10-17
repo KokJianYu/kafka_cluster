@@ -1,5 +1,9 @@
 # kafka_cluster
 
+- Start Kafka Cluster with Zookeeper Ensemble
+
+  docker-compose up
+
 - Create topic
 
   docker run --rm --net=kafka_cluster_default wurstmeister/kafka kafka-topics.sh --create --topic topic1 --replication-factor 3 --partitions 1 --bootstrap-server kafka1:9092,kafka2:9092,kafka3:9092
