@@ -21,8 +21,3 @@
   docker run --rm --net=kafka_cluster_default wurstmeister/kafka zookeeper-shell.sh zookeeper1:2181 ls /brokers/ids
 
 - To find broker Id for container, use `docker-compose logs | grep brokerId` and manually check through to find.
-
-- Nothing
-  docker exec -it kafka_cluster_kafka1_1 /bin/bash
-
-  docker exec -it kafka_cluster_zookeeper1_1 /bin/bash
